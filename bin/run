@@ -1,0 +1,30 @@
+#!usr/bin/env ruby
+require_relative '../config/environment'
+
+
+#TESTS CASES
+
+
+#Author class
+p author = Author.new("Kaveh Solekhol", "science")
+p author1 = Author.new('Mauricio Panini', "sports")
+p author2 = Author.new('Ben Jacobs', "fashion")
+p author3 = Author.new('Fabrizio Romano', "crime")
+p author4 = Author.new('Mike Verweji', "politics")
+
+
+
+#Magazine class
+p magazine2 = Magazine.new("The Times", "Fashion")
+p vanity = Magazine.new('GQ', 'Politics, business, finance, current events, pop culture, and entertainment.')
+p geo = Magazine.new('National History', 'The World and its Inhabitants')
+p food = Magazine.new('The Social Network', 'American Food Culture')
+
+#Article class
+p Margs = Article.new("Boom", "Vogue", "February Edition")
+p new_article = Article.new(author1, vanity, 'Chelsea')
+p new_article1 = Article.new(author2, geo, 'Graham Potter')
+p new_article2 = Article.new(author3, food, 'BT Sport')
+p new_article3 = Article.new(author3, food, 'Easter morning')
+p new_article4 = Article.new(author1, vanity, 'Iron Man')
+p new_article5 = Article.new(author4, vanity, 'Wizkid')
