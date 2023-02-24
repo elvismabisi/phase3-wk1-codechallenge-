@@ -1,30 +1,56 @@
 #!usr/bin/env ruby
 require_relative '../config/environment'
 
+def reload
+    load "config/environment.rb"
+end
+
+# def to_s
+#     "#{name} (#{category})"
+
 
 #TESTS CASES
 
 
 #Author class
-p author = Author.new("Kaveh Solekhol", "science")
-p author1 = Author.new('Mauricio Panini', "sports")
-p author2 = Author.new('Ben Jacobs', "fashion")
-p author3 = Author.new('Fabrizio Romano', "crime")
-p author4 = Author.new('Mike Verweji', "politics")
+author = Author.new("Malcolm", "history")
+puts author.name
+author1 = Author.new('Flameo Sumeet', "soccer")
+puts author1.name
+author2 = Author.new('Alex Goldberg', "science")
+puts author2.name
+author3 = Author.new('Mauricio Panini', "football")
+puts author3.name
+author4 = Author.new('Carl Tudor', "rugby")
+puts author4.name
+p author.add_article("Malcolm", "history")
 
 
 
-#Magazine class
-p magazine2 = Magazine.new("The Times", "Fashion")
-p vanity = Magazine.new('GQ', 'Politics, business, finance, current events, pop culture, and entertainment.')
-p geo = Magazine.new('National History', 'The World and its Inhabitants')
-p food = Magazine.new('The Social Network', 'American Food Culture')
+# Magazine class
+vogue = Magazine.new("Gq", "Commerce")
+puts vogue
+vanity = Magazine.new('Vogue', 'Relations, business, sports, news, pop, and burudani.')
+puts vanity 
+geo = Magazine.new('National Geographic Wild', 'The World')
+puts geo
+food = Magazine.new('Cuisines', 'African Food Cuisine')
+puts food
 
-#Article class
-p Margs = Article.new("Boom", "Vogue", "February Edition")
-p new_article = Article.new(author1, vanity, 'Chelsea')
-p new_article1 = Article.new(author2, geo, 'Graham Potter')
-p new_article2 = Article.new(author3, food, 'BT Sport')
-p new_article3 = Article.new(author3, food, 'Easter morning')
-p new_article4 = Article.new(author1, vanity, 'Iron Man')
-p new_article5 = Article.new(author4, vanity, 'Wizkid')
+# # #Article class
+Margs = Article.new("Merlin", "Times", "February Edition")
+puts Margs
+new_article = Article.new("Mauricio Panini", sky, 'Chelsea')
+puts new_article
+new_article1 = Article.new("David Rudisha", sport, 'Graham Potter')
+puts new_article1
+new_article2 = Article.new("Fabio Paratici", director, 'Bt Sports')
+puts new_article2
+new_article3 = Article.new("Ghost Rider", horror 'Haloween.')
+puts new_article3
+new_article4 = Article.new("Mejja", vogue, 'Iron Man')
+puts new_article4
+new_article5 = Article.new("Mike Verweji", spotify, 'Kanye West')
+puts new_article5
+
+

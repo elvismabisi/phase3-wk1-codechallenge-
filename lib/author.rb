@@ -12,6 +12,11 @@ class Author
     def articles
         @articles 
     end
+
+    def to_s
+        "#{name} (#{category})"
+    end
+    
     
     #return list of unique magazines that author has wrtten
     def magazines
@@ -20,7 +25,7 @@ class Author
     
     #takes mag and article arguments to create new article instances and add it to @articles array
     def add_article(magazine, title)  
-        article = Article.new(self, magazine, title)
+        Article.new(self, magazine, title)
         # @articles << article
         # article
     end
@@ -33,11 +38,3 @@ class Author
 end
 
 
-#TESTS
-
-# author = Author.new("Margs", "science")
-# puts author.name
-# author2 = Author.new("Tazer Black","sports" )
-# puts author2
-
-# p author.add_article("Science", "liko")

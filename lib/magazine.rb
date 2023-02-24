@@ -54,10 +54,3 @@ class Magazine
 end    
 
 
-#TESTS
-
-# magazine1 = Magazine.new("National Geographic", "Science")
-# magazine2 = Magazine.new("Vogue", "Fashion")
-
-# puts magazine1
-# puts magazine2

@@ -129,3 +129,13 @@ Magazine#article_titles
 
 Magazine#contributing_authors
 - Returns an array of authors who have written more than 2 articles for the magazine
+
+### BDD
+    input => Takes in three models/classes (Articles, Magazines, Authors)
+    output => Outputs/displays different data from the three models/classe
+
+ ## Technologies used
+    Ruby
+
+## Author
+this project and all of its contents have been authored by Gregory Elvis
