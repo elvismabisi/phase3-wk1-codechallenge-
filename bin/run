@@ -40,17 +40,17 @@ puts food
 # # #Article class
 Margs = Article.new("Merlin", "Times", "February Edition")
 puts Margs
-new_article = Article.new("Mauricio Panini", sky, 'Chelsea')
+new_article = Article.new("Mauricio Panini", vanity, 'Chelsea')
 puts new_article
-new_article1 = Article.new("David Rudisha", sport, 'Graham Potter')
+new_article1 = Article.new("David Rudisha", geo, 'Graham Potter')
 puts new_article1
-new_article2 = Article.new("Fabio Paratici", director, 'Bt Sports')
+new_article2 = Article.new("Fabio Paratici", food, 'Bt Sports')
 puts new_article2
-new_article3 = Article.new("Ghost Rider", horror 'Haloween.')
+new_article3 = Article.new("Ghost Rider", food,'Haloween.')
 puts new_article3
 new_article4 = Article.new("Mejja", vogue, 'Iron Man')
 puts new_article4
-new_article5 = Article.new("Mike Verweji", spotify, 'Kanye West')
+new_article5 = Article.new("Mike Verweji", vanity, 'Kanye West')
 puts new_article5
 
 
